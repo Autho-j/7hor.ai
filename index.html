@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>7hor.ai</title>
+</head>
+
+<body onload="loading()">
+
+    <!-- Side Navication -->
+    <div class="sideNav" id="sidenav">
+        <i class='bx bx-home-alt' id='home' onclick='home()'>Home</i>
+        <i class='bx bx-mobile-alt' id='home' onclick='openPhoto()'>Mobile</i>
+        <i class='bx bx-desktop' id='home' onclick='openVideo()'>Desktop</i>
+    </div>
+    <!-- End Side Nav -->
+
+    <!-- Main Section -->
+    <main id="main">
+
+        <!-- Header section -->
+        <header>
+            <div class="header-left">
+                <i class='bx bx-chevron-left' id="icon-side" onclick="closeNav()"></i>
+                <i class='bx bx-chevron-right' id="icon-extend" onclick="openNav()"></i>
+                <i class='bx bxs-analyse' id="logo" onclick="window.location.href='./index.html'"></i>
+            </div>
+            <input type="text" id="input" placeholder="Search...">
+            <div class="header-right">
+                <i class='bx bx-moon' id="icon-dark" onclick="darkMode()"></i>
+                <i class='bx bx-sun' id="icon-bright" onclick="brightMode()"></i>
+                <i class='bx bx-user-circle' id="icon" onclick='login()'></i>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Dashboard Section -->
+        <div class="dashboard">
+
+            <!-- Login Section -->
+            <div class="login-page" id="login">
+                <h2>Login</h2>
+                <input type="email" class="input" id="input-user" placeholder="Username or email" required>
+                <input type="password" class="input" id="input-pass" placeholder="Password" required minlength="6">
+                <button class="btn-login" id="btn-login">Login</button>
+                <a href="#" onclick="signup()">Create new one.</a>
+            </div>
+            <!-- End Login -->
+
+            <!-- Sign-up Section -->
+            <div class="signup-page" id="signup">
+                <h2>Sign Up</h2>
+                <input type="email" class="input" id="input-user" placeholder="Username or email" required>
+                <input type="password" class="input" id="input-pass" placeholder="Password" required minlength="6">
+                <input type="password" class="input" id="input-pass" placeholder="Re-type password">
+                <button class="btn-login" id="btn-signup">Sign Up</button>
+                <p>Already user? <a href="#" onclick="login()">login.</a></p>
+            </div>
+            <!-- End Sign-up -->
+
+            <!-- Home Page Section -->
+            <div class="home-page" id='home-page'>
+                <h1>Art</h1>
+                <h5>is</h5>
+                <h4>Everywhere you Notice.</h4>
+                <div class="txt">
+                    <button onclick='openPhoto()'>Mobile</button>
+                    <button onclick='openVideo()'>Desktop</button>
+                </div>
+
+                <!-- Slide Show Section -->
+                <div class="slide-container" id="slides">
+                    <div class="mySlides fade">
+                        <img
+                            src="https://images.wallpaperscraft.com/image/single/lion_muzzle_mane_120524_1920x1080.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img
+                            src="https://images.wallpaperscraft.com/image/single/cappuccino_coffee_foam_224481_1080x1920.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img
+                            src="https://images.wallpaperscraft.com/image/single/pier_water_horizon_224079_1080x1920.jpg">
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <!-- End Slide Show -->
+            </div>
+            <!-- End Home Page -->
+
+            <!-- Photos Section -->
+            <div class="mobile" id="mobile">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/flying_ship_portal_fantasy_224477_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/chamomile_flowers_macro_224473_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/cappuccino_coffee_foam_224481_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/lake_forest_fog_224444_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/desert_dunes_hills_224460_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/wall_ivy_plant_224426_1080x1920.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/castle_fortress_mountains_224399_1080x1920.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/skyscraper_building_trees_224359_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/candle_fire_wax_224313_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/rails_railroad_nature_224266_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/branch_leaves_mesh_224234_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/branches_leaves_light_224191_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/leaf_drops_macro_224159_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/lion_muzzle_mane_120524_1080x1920.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/light_bulb_incandescent_lamp_electricity_224141_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/dog_pet_furry_224091_1080x1920.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/mountains_lake_reflection_224092_1080x1920.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/light_lines_long_exposure_224088_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/pier_water_horizon_224079_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/motorcycle_bike_red_224067_1080x1920.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/wild_cat_glance_predator_224062_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/girl_neko_ears_224048_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/palms_trees_leaves_224026_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/butterfly_insect_wings_224015_1080x1920.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/branches_leaves_autumn_224008_1080x1920.jpg">
+
+            </div>
+
+            <!-- End Photos -->
+
+            <!-- Dtp Section -->
+            <div class="dtp" id="dtp">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/flying_ship_portal_fantasy_224477_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/chamomile_flowers_macro_224473_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/cappuccino_coffee_foam_224481_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/lake_forest_fog_224444_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/desert_dunes_hills_224460_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/wall_ivy_plant_224426_1920x1080.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/castle_fortress_mountains_224399_1920x1080.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/skyscraper_building_trees_224359_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/candle_fire_wax_224313_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/rails_railroad_nature_224266_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/branch_leaves_mesh_224234_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/branches_leaves_light_224191_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/leaf_drops_macro_224159_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/lion_muzzle_mane_120524_1920x1080.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/light_bulb_incandescent_lamp_electricity_224141_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/dog_pet_furry_224091_1920x1080.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/mountains_lake_reflection_224092_1920x1080.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/light_lines_long_exposure_224088_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/pier_water_horizon_224079_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/motorcycle_bike_red_224067_1920x1080.jpg">
+                <img
+                    src="https://images.wallpaperscraft.com/image/single/wild_cat_glance_predator_224062_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/girl_neko_ears_224048_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/palms_trees_leaves_224026_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/butterfly_insect_wings_224015_1920x1080.jpg">
+                <img src="https://images.wallpaperscraft.com/image/single/branches_leaves_autumn_224008_1920x1080.jpg">
+            </div>
+            <!-- End Videos -->
+
+        </div>
+        <!-- End Dashboard -->
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="social">
+                <i class='bx bxl-facebook-circle' id='social'></i>
+                <i class='bx bxl-twitter' id='social'></i>
+                <i class='bx bxl-github' id='social'></i>
+            </div>
+            <div class="txt-bot">
+                &copy; 2021. 7hor.ai. All rights reserved.
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+    </main>
+    <!-- End Main -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
